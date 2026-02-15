@@ -1,19 +1,40 @@
-# Assignment 10
+# Trench Coat Shop Application (C++ / Qt)
 
-## Requirements
-1. Add multiple *undo* and *redo* functionality for the `add`, `remove`, and `update` operations. Implement this functionality using inheritance and polymorphism. You will have **Undo** and **Redo** buttons on the GUI, as well as a key combination to undo and redo the operations (e.g. `Ctrl+Z`, `Ctrl+Y`).
+A desktop application for managing a trench coat shop, developed using **C++ and the Qt framework**.  
+This project was built as part of coursework and demonstrates layered architecture, GUI design, and software engineering principles.
 
-2. Show the contents of the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list` using a table view. You must use the [Qt View/Model](https://doc.qt.io/qt-6/modelview.html) components (`QTableView`). Create your own model – a class which inherits from [`QAbstractTableModel`](https://doc.qt.io/qt-6/qabstracttablemodel.html). This window will be opened from your GUI's main window.
+## 🧥 Features
 
-<!--
-## Bonus Possibility [0.1p]
-Add multiple *undo* and *redo* functionality for the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list`. This will be tested through the application's GUI.
+### 👨‍💼 Administrator Mode
+- Add, remove, and update trench coats
+- Undo/Redo functionality for modifications
+- Persistent storage in CSV and HTML formats
 
+### 🛍 User Mode
+- Browse trench coats filtered by size
+- Add coats to shopping basket
+- View and manage basket contents
+- Save basket to CSV or HTML
 
-## Bonus Possibility [0.1p]
-Use [custom Qt delegates](https://doc.qt.io/qt-6/qtwidgets-itemviews-stardelegate-example.html). In one of the columns of the Qt table view that shows the elements of the `adoption list` / **etc...**, display an image of the dog, trench coat or a play button that plays the movie trailer or the tutorial - depending on the problem statement. See the example images below.
+---
 
-![image](https://user-images.githubusercontent.com/25611695/119180503-0bfef700-ba79-11eb-86ae-3a42d41bb437.png)
-![image](https://user-images.githubusercontent.com/25611695/119180582-2507a800-ba79-11eb-921c-22f64a05522b.png)
+## 🏗 Architecture
 
--->
+The application follows a layered architecture:
+
+- **Domain** – TrenchCoat entity
+- **Repository** – Data storage mechanism
+- **Service** – Business logic
+- **UI** – Qt graphical interface
+
+This separation allows modular design, easier testing, and maintainable code.
+
+---
+
+## 🛠 Technologies Used
+
+- C++
+- Qt Framework (Widgets)
+- Object-Oriented Programming
+- File I/O (CSV / HTML)
+- Undo/Redo design using command pattern
