@@ -1,7 +1,7 @@
 # Trench Coat Shop Application (C++ / Qt)
 
 A desktop application for managing a trench coat shop, developed using **C++ and the Qt framework**.  
-This project was built as part of coursework and demonstrates layered architecture, GUI design, and software engineering principles.
+This project demonstrates layered architecture, GUI design, and software engineering principles.
 
 ## 🧥 Features
 
